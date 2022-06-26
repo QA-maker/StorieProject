@@ -32,7 +32,8 @@ public class StorieComponnents {
 			public final static By email= By.xpath("//input[@id='userEmail']");
 			public final static By fieldAge=By.xpath("//input[@id='age']");
 			public final static By fielSalary= By.xpath("//input[@id='salary']");
-			public final static By Department= By.xpath("//button[@id='submit']");
+			public final static By Department= By.xpath("//input[@id='department']");
+			public final static By btnSubmit=By.xpath("//button[@id='submit']");		
 	}
 
 

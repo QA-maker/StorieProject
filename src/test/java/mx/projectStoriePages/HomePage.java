@@ -27,7 +27,7 @@ public class HomePage extends Driver{
 		e.getMessage();}
 	}*/
 	
-	public void clickButton() {
+	public void clickButtonaddFormart() {
 		WebElement btnView= driver.findElement(By.xpath("//a[@class='btn btn-white btn-xl']"));
 		safeClick(btnView);
 	}
@@ -56,8 +56,60 @@ public class HomePage extends Driver{
 	}
 	
 	public void addRegister() throws Exception{
-		WebElement 
+		WebElement btnAdd= driver.findElement(mx.projectStorieComponents.StorieComponnents.btnAddRegister);
+		safeClick(btnAdd);
+		
 		
 	}
-
+	public void EnterFormat() throws Exception{
+		WebElement Name= driver.findElement(mx.projectStorieComponents.StorieComponnents.fieldName);
+		waitUntilVisible(Name).click();
+		waitUntilVisible(Name).sendKeys("Ernesto");
+		
+		
+		}
+	public void EnterLastName() throws Exception{
+		WebElement Name= driver.findElement(mx.projectStorieComponents.StorieComponnents.fieldLastName);
+		waitUntilClickable(Name).click();
+		
+		waitUntilClickable(Name).sendKeys("Trejo");
+	
+	}
+	public void EnterMail() throws Exception{
+		WebElement Name= driver.findElement(mx.projectStorieComponents.StorieComponnents.email);
+		waitUntilClickable(Name).click();
+		
+		waitUntilClickable(Name).sendKeys("cybsarynet@gmail.com");
+	
+	}
+	
+	public void EnterAge() throws Exception{
+		WebElement age= driver.findElement(mx.projectStorieComponents.StorieComponnents.fieldAge);
+		waitUntilClickable(age).click();
+		
+		waitUntilClickable(age).sendKeys("42");
+	}
+	
+	public void EnterSalary() throws Exception{
+		WebElement salary= driver.findElement(mx.projectStorieComponents.StorieComponnents.fielSalary);
+		waitUntilVisible(salary).click();
+		
+		waitUntilClickable(salary).sendKeys("45000");
+	}
+	
+	public void EnterDepartment() throws Exception{
+		WebElement dept= driver.findElement(mx.projectStorieComponents.StorieComponnents.Department);
+		waitUntilClickable(dept).click();
+		
+		waitUntilClickable(dept).sendKeys("Automation QA");
+	}
+	
+	public void btnsubmit() throws Exception{
+		WebElement submit= driver.findElement(mx.projectStorieComponents.StorieComponnents.btnSubmit);
+		waitUntilClickable(submit).click();
+		
+		
+	}
 }
+
+
