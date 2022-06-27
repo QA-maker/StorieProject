@@ -62,10 +62,14 @@ public class HomePage extends Driver{
 		
 	}
 	public void EnterFormat() throws Exception{
-		WebElement Name= driver.findElement(mx.projectStorieComponents.StorieComponnents.fieldName);
-		waitUntilVisible(Name).click();
-		waitUntilVisible(Name).sendKeys("Ernesto");
-		
+		try {
+		WebElement Name= driver.findElement(By.cssSelector("#firstName"));
+		safeClick(Name);
+		waitUntilClickable(Name).sendKeys("Ernesto");
+		System.out.println("Nombre"+Name);
+		}catch (Exception e) {
+			e.getMessage();
+		}
 		
 		}
 	public void EnterLastName() throws Exception{

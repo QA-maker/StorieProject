@@ -9,21 +9,20 @@ public class RunStorieTest extends TestParameters {
 		
 		public void RunTestExample() throws Exception {
 			driver.navigate().to(mx.projectStorieComponents.StorieComponnents.urlDemo);
+			/*Thread.sleep(15000);
 			homepage.addRegister();
 			Thread.sleep(5000);
 			homepage.EnterFormat();
-			Thread.sleep(5000);
-			homepage.EnterAge();
-			Thread.sleep(5000);
-			homepage.EnterLastName();
-			Thread.sleep(5000);
+			Thread.sleep(5000);*/
+			/*homepage.EnterAge();
+						homepage.EnterLastName();
+			
 			homepage.EnterMail();
-			Thread.sleep(5000);
-			homepage.EnterSalary();
-			Thread.sleep(5000);
+				homepage.EnterSalary();
+			
 			homepage.EnterDepartment();
-			Thread.sleep(5000);
-			homepage.btnsubmit();
+			
+			homepage.btnsubmit();*/
 			//Thread.sleep(mx.projectStorieComponents.StorieComponnents.stopMediumTimeMilliseconds);
 			homepage.getListName();
 			
