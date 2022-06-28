@@ -55,6 +55,31 @@ public class HomePage extends Driver{
 		
 	}
 	
+	public void scrollTable() throws Exception{
+		
+		
+		scrollToElement(By.xpath("//legend[contains( text(), 'Web Table Example')]"));
+	}
+	
+	public void gewtListCourses() throws Exception{
+		List <WebElement> getCourses;
+		List <WebElement> getrowCourses;
+		int contador =0;
+		
+		getCourses = driver.findElements(By.xpath("//table[@id='product' and @name='courses']//tbody//tr"));
+		String print ="";
+		
+		for(WebElement getrows: getCourses) {
+			contador= contador +1;
+			getrowCourses= driver.findElements(By.xpath("//table[@id='product' and @name='courses']//tbody//tr["+String.valueOf(contador)+"]//td"));
+			
+			for (WebElement rowNames:getrowCourses) {
+				print=rowNames.getText();
+				System.out.println("Obteniendo valores /n"+print);
+			}
+		}
+	}
+	
 	public void addRegister() throws Exception{
 		WebElement btnAdd= driver.findElement(mx.projectStorieComponents.StorieComponnents.btnAddRegister);
 		safeClick(btnAdd);
