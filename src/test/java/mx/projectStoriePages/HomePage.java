@@ -18,14 +18,15 @@ public class HomePage extends Driver{
 		super(driver);
 	}
 	
-	/*public void TypeText() {
+	public void TypeText() {
 		try {
 		WebElement text = driver.findElement(mx.projectStorieComponents.StorieComponnents.CountriesSelect);
 		safeClick(text);
-		waitUntilClickable(text).sendKeys("Me");		 
+		waitUntilVisible(text).sendKeys("Mexico");		 
 	}catch (Exception e) {
-		e.getMessage();}
-	}*/
+		e.printStackTrace();
+		}
+	}
 	
 	public void clickButtonaddFormart() {
 		WebElement btnView= driver.findElement(By.xpath("//a[@class='btn btn-white btn-xl']"));
@@ -75,7 +76,7 @@ public class HomePage extends Driver{
 			
 			for (WebElement rowNames:getrowCourses) {
 				print=rowNames.getText();
-				System.out.println("Obteniendo valores /n"+print);
+				System.out.println("Obteniendo cursos \n"+print);
 			}
 		}
 	}

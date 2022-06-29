@@ -13,7 +13,7 @@ public class StorieComponnents {
 	public final static String urlDemo="https://demoqa.com/webtables";
 	// Components Home Page Elements
 
-		public final static By CountriesSelect = By.xpath("//input[@id='autocomplete']");
+		public final static By CountriesSelect = By.xpath("//input[@type='text' and @id='autocomplete']");
 		public final static By selectOptions = By.xpath("//select[@id='dropdown-class-example']");
 		public final static By windowButton = By.xpath("//button[@id='openwindow']");// realizar manejo de Errores
 		public final static By OpenTab = By.xpath("//a[@id='opentab']");// take screenshoot

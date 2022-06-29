@@ -9,7 +9,8 @@ public class RunStorieTest extends TestParameters {
 		
 		public void RunTestExample() throws Exception {
 			driver.navigate().to(mx.projectStorieComponents.StorieComponnents.urlProject);
-			Thread.sleep(30000);
+			Thread.sleep(35000);
+			homepage.TypeText();
 			/*homepage.addRegister();
 			Thread.sleep(5000);
 			homepage.EnterFormat();
